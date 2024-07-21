@@ -1,0 +1,26 @@
+import React from "react";
+
+const Square =( props)=>{
+    return (
+      <div 
+      onClick={props.onClick}
+      style={
+        {
+             border:"1px solid",
+             height:"120px",
+             width:"120%",
+             display:"flex",
+            
+             justifyContent:"center",
+             alignItems:"center",
+          
+
+        }
+      }
+      className="square">
+        <h1> {props.value}</h1>
+      </div>
+    );
+};
+
+export default Square;
